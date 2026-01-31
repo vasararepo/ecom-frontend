@@ -57,10 +57,10 @@ const ManageUsers = ({ onAddUser, onEditUser }: Props) => {
     try {
       setLoading(true);
 
-      // ✅ fetchUsersApi returns RAW API users
+      
       const apiUsers = (await fetchUsersApi()) as UserApi[];
 
-      // ✅ map API → UI
+      
       const mappedUsers = apiUsers.map(mapUserApiToUser);
 
       setUsers(mappedUsers);

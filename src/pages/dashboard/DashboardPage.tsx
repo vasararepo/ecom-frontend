@@ -1,6 +1,6 @@
-import Navbar from "../../components/navbar/navbar";
+import Navbar from "../../components/navbar/Navbar";
 import AdminLayout from "../../layout/AdminLayout";
-import Dashboard from "../../components/dashboard/dashboard";
+import Dashboard from "../../components/dashboard/Dashboard";
 import "../../assets/css/OrderPage.css";
 
 

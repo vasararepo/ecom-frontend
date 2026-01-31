@@ -65,7 +65,7 @@
   min-height: 0;
 }
 
-/* ONLY content scrolls */
+
 .form-scroll {
   flex: 1;
   overflow-y: auto;
