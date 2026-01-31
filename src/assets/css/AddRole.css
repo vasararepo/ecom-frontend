@@ -1,0 +1,222 @@
+/* ================= PAGE ================= */
+.add-role-page {
+  background: #ffffff;
+  padding: 28px 36px;
+  border-radius: 16px;
+}
+
+/* ================= FORM ================= */
+.add-role-form {
+  max-width: 1000px;
+}
+
+/* FORM ROW */
+.form-row {
+  margin-bottom: 22px;
+}
+
+.form-row label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #1f2937;
+}
+
+.required {
+  color: #ef4444;
+}
+
+/* INPUTS */
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #cfe3f5;
+  font-size: 14px;
+}
+
+.form-row textarea {
+  resize: none;
+}
+
+/* ================= USERS ================= */
+
+.users-box {
+  border: 1px solid #e3edf7;
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: #f9fcff;
+  max-height: 220px;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.user-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #374151;
+  cursor: pointer;
+}
+
+.user-checkbox input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: #38b26b;
+}
+
+/* ================= PERMISSIONS ================= */
+
+/* WRAPPER */
+.permissions-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin-top: 14px;
+}
+
+/* PERMISSION CARD */
+.permission-card {
+  border: 1px solid #e3edf7;
+  border-radius: 12px;
+  padding: 14px 16px;
+  background: #f9fcff;
+}
+
+/* PARENT LABEL */
+.permission-card > label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  cursor: pointer;
+}
+
+/* CHILD PERMISSIONS */
+.permission-children {
+  margin-top: 10px;
+  margin-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.permission-children label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+}
+
+/* CHECKBOX */
+.permission-card input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: #38b26b;
+}
+
+/* ================= ACTIONS ================= */
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.form-actions button {
+  border: none;
+  padding: 9px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-actions button:first-child {
+  background: #eef2f7;
+  color: #374151;
+}
+
+.form-actions button:last-child {
+  background: linear-gradient(90deg, #1f9cdf, #38b26b);
+  color: white;
+}
+
+.form-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+/* USERS INLINE ROW */
+.users-inline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.users-count {
+  background: #e6f2ff;
+  color: #1f9cdf;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.users-link {
+  color: #1f9cdf;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* DIALOG */
+.dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.dialog {
+  background: #ffffff;
+  border-radius: 14px;
+  width: 420px;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.dialog h3 {
+  margin-bottom: 14px;
+}
+
+.dialog-content {
+  overflow-y: auto;
+  border: 1px solid #e3edf7;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+

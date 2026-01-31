@@ -1,0 +1,82 @@
+/* ================= BACKDROP ================= */
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+/* ================= MODAL ================= */
+
+.modal {
+  background: #ffffff;
+  width: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.modal h2 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* ================= FORM ================= */
+
+.modal input,
+.modal select {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+.modal input:focus,
+.modal select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* ================= ACTIONS ================= */
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.modal-actions button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.modal-actions button:first-child {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.modal-actions button:first-child:hover {
+  background: #1d4ed8;
+}
+
+.modal-actions button.cancel {
+  background: #e5e7eb;
+  color: #334155;
+}
+
+.modal-actions button.cancel:hover {
+  background: #cbd5e1;
+}

@@ -1,0 +1,148 @@
+
+
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+
+  height: calc(100vh - 60px);
+  width: 64px;
+
+  background: #ffffff;
+  border-right: 1px solid #e0e0e0;
+
+  display: flex;
+  flex-direction: column;
+  padding: 12px 6px;
+
+  transition: width 0.25s ease;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+/* Expanded sidebar width */
+.sidebar.expanded {
+  width: 220px;
+}
+
+
+
+.sidebar-toggle {
+  display: flex;
+  align-items: center;
+
+  padding: 10px;
+  margin-bottom: 12px;
+
+  border-radius: 6px;
+  cursor: pointer;
+
+  transition: justify-content 0.25s ease, padding-left 0.25s ease;
+}
+
+/* Hover feedback */
+.sidebar-toggle:hover {
+  background: rgba(30, 136, 229, 0.08);
+}
+
+/* Menu icon styling */
+.sidebar-toggle svg {
+  font-size: 20px;
+  color: #1e88e5;
+}
+
+/* 
+   When sidebar is COLLAPSED:
+   - Center the menu icon
+*/
+.sidebar:not(.expanded) .sidebar-toggle {
+  justify-content: center;
+}
+
+
+.sidebar.expanded .sidebar-toggle {
+  justify-content: flex-start;
+  padding-left: 14px;
+}
+
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 10px 12px;
+  border-radius: 6px;
+
+  cursor: pointer;
+  font-size: 14px;
+  color: #263238;
+
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Icon inside menu item */
+.menu-item svg {
+  font-size: 20px;
+  color: #1e88e5;
+}
+
+/* Hover state */
+.menu-item:hover {
+  background: rgba(30, 136, 229, 0.08);
+}
+
+/* Active (selected) menu item */
+.menu-item.active {
+  background: #1e88e5;
+  color: #ffffff;
+}
+
+.menu-item.active svg {
+  color: #ffffff;
+}
+
+
+
+.menu-item.logout {
+  margin-top: auto;
+  color: #e53935;
+}
+
+.menu-item.logout svg {
+  color: #e53935;
+}
+
+.menu-item.logout:hover {
+  background: rgba(229, 57, 53, 0.1);
+}
+
+
+.sidebar:not(.expanded) .menu-item {
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.sidebar:not(.expanded) .menu-item span {
+  display: none;
+}
+
+
+
+.orders-layout {
+  margin-left: 64px;
+  transition: margin-left 0.25s ease;
+}
+
+
+.sidebar.expanded ~ .orders-layout {
+  margin-left: 220px;
+}

@@ -1,0 +1,151 @@
+.department-page {
+  padding: 12px 0;
+}
+
+.department-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.department-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.department-search {
+  height: 34px;
+  padding: 0 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+}
+
+/* BUTTON COLOR MATCHING ROLES */
+.primary-btn.blue-green {
+  background: #2fa35a;
+  color: #ffffff;
+  border: none;
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(30, 136, 201, 0.25);
+}
+
+.primary-btn.blue-green:hover {
+  background: #1e88c9;
+}
+
+/* TABLE */
+.department-table {
+  margin-top: 12px;
+}
+
+/* HEADER + ROW */
+.department-table-header,
+.department-table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 10px 12px;
+  align-items: center;
+}
+
+/* HEADER COLOR (ROLES GRADIENT) */
+.department-table-header {
+ background: linear-gradient(
+    90deg,
+    rgba(67, 129, 221, 0.501),
+    rgba(64, 200, 121, 0.456)
+  );
+  font-weight: 600;
+  color: #090909;
+  border-radius: 6px;
+}
+
+/* ROW */
+.department-table-row {
+  border-bottom: 1px solid #e3edf7;
+  background: #ffffff;
+  color: #374151;
+}
+
+/* ROW HOVER (LIKE ROLES) */
+.department-table-row:hover {
+  background: #f5fbff;
+}
+
+/* ACTIVE USERS COLOR */
+.active-users {
+  color: #1e88c9;
+  font-weight: 500;
+}
+
+/* ACTION ICONS */
+.department-actions-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.icon-btn {
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* ICON COLORS */
+.action-icons svg {
+  margin-left: 12px;
+  margin-right: 0;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.action-icons svg:hover {
+  color: #1e88c9;
+}
+
+/* DELETE ICON */
+.action-icons .delete-icon {
+  color: #ef4444;
+}
+
+.action-icons .delete-icon:hover {
+  color: #dc2626;
+}
+
+
+
+.department-page {
+  font-size: 13px;
+}
+
+.department-header h2 {
+  font-size: 18px;
+}
+
+.department-table-header {
+  font-size: 13px;
+}
+
+.department-table-row {
+  font-size: 13px;
+}
+
+.active-users {
+  font-size: 13px;
+}
+
+.department-search {
+  font-size: 13px;
+}
+
+.primary-btn.blue-green {
+  font-size: 13px;
+}

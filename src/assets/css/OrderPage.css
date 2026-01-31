@@ -1,0 +1,185 @@
+
+.orders-layout {
+  display: flex;
+  min-height: calc(100vh - 60px);
+  background: #f2f6f9;
+}
+
+.order-page {
+  flex: 1;
+  padding: 20px 24px;
+}
+
+
+.orders-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+
+.order-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.tab {
+  padding: 6px 16px;
+  border-radius: 18px;
+  border: none;
+  background: rgba(31, 156, 223, 0.12);
+  color: #1f9cdf;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.tab.active {
+  background: #38b26b 100%;
+  color: #ffffff;
+}
+
+
+.filters-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: #f7fbfd;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.filters-row input,
+.filters-row select {
+  height: 34px;
+  padding: 0 10px;
+  border-radius: 6px;
+  border: 1px solid #d7e3ec;
+  font-size: 13px;
+}
+
+
+.filter-btn {
+  background: #38b26b;
+  color: #ffffff;
+  border: none;
+
+  height: 36px;
+  padding: 0 16px;
+
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.filter-btn:hover {
+  background: #1f9cdf;
+}
+.filter-btn svg {
+  font-size: 18px;
+  line-height: 1;
+}
+
+
+.reset-btn {
+  background: #e3edf3;
+  border: none;
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+.download-btn {
+  margin-left: auto;
+  background: #38b26b;
+  color: #ffffff;
+  border: none;
+
+  height: 36px;
+  padding: 0 16px;
+
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+.download-btn:hover {
+  background: #1f9cdf;
+}
+
+
+.download-btn .download-icon {
+  font-size: 18px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+
+
+td input[type="checkbox"] {
+  cursor: pointer;
+}
+
+
+.expand-icon {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  color: #1f9cdf;
+}
+
+.expand-icon svg {
+  font-size: 22px;
+}
+
+
+.expanded-row td {
+  background: #f4f9fc;
+  padding: 0;
+}
+
+
+.expanded-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 16px 20px;
+  font-size: 13px;
+}
+
+.expanded-content h4 {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #1f9cdf; 
+}
+
+.expanded-content p {
+  margin: 4px 0;
+  color: #444;
+}
+.page-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #000000; 
+}

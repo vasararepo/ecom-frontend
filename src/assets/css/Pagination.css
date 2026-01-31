@@ -1,0 +1,29 @@
+.pagination {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.pagination span {
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.pagination span:hover {
+  background: rgba(31, 156, 223, 0.15);
+}
+
+.pagination .active {
+  background: linear-gradient(90deg, #1f9cdf, #38b26b);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.pagination .disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}

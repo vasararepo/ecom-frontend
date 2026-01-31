@@ -1,0 +1,104 @@
+.products-page {
+  padding: 20px;
+}
+
+.products-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.add-btn {
+  float: right;
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+/* TABLE */
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 60px;
+}
+
+.products-table thead {
+  background: linear-gradient(
+    90deg,
+    #6ea8fe,
+    #7cd3a6
+  );
+}
+
+.products-table th {
+  color: #fff;
+  padding: 14px;
+  text-align: left;
+}
+
+.products-table td {
+  padding: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* SWITCH */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 22px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #cbd5e1;
+  border-radius: 999px;
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  top: 2px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+  background: #22c55e;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+/* ACTIONS */
+
+.actions svg {
+  cursor: pointer;
+  margin-right: 10px;
+  color: #64748b;
+}
+
+.actions .delete {
+  color: #ef4444;
+}
