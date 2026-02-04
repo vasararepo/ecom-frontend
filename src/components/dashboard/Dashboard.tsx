@@ -1,10 +1,7 @@
 import "../../assets/css/dashboard.css";
 import OrdersChart from "./OrdersChart";
 
-/**
- * Dashboard component
- * Pure UI only (like OrderTable)
- */
+
 const Dashboard = () => {
   return (
     <div className="dashboard-container">

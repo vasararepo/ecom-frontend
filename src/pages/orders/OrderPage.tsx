@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, useCallback } from "react";
 import Navbar from "../../components/navbar/Navbar";
-import OrderTable from "../../components/order-table/order-table";
+import OrderTable from "../../components/order-table/Table";
 import AdminLayout from "../../layout/AdminLayout";
 import "../../assets/css/OrderPage.css";
 import DownloadIcon from "@mui/icons-material/Download";

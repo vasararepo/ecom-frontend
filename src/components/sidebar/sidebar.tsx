@@ -7,6 +7,8 @@ import Inventory2Icon from "@mui/icons-material/Inventory2";
 import SettingsIcon from "@mui/icons-material/Settings";
 import LogoutIcon from "@mui/icons-material/Logout";
 import MenuIcon from "@mui/icons-material/Menu";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import PeopleIcon from "@mui/icons-material/People";
 
 import { logoutApi } from "../../api/auth.api";
 
@@ -24,6 +26,7 @@ const Sidebar = ({ expanded, setExpanded }: Props) => {
   const location = useLocation();
 
   /* ================= ACTIVE ROUTE ================= */
+
   const isActive = (path: string): boolean =>
     location.pathname === path ||
     location.pathname.startsWith(path + "/");
@@ -78,12 +81,32 @@ const Sidebar = ({ expanded, setExpanded }: Props) => {
 
         <div
           className={`menu-item ${
+            isActive("/cart") ? "active" : ""
+          }`}
+          onClick={() => navigate("/cart")}
+        >
+          <ShoppingCartIcon />
+          {expanded && <span>Cart</span>}
+        </div>
+
+        <div
+          className={`menu-item ${
             isActive("/products") ? "active" : ""
           }`}
           onClick={() => navigate("/products")}
         >
           <Inventory2Icon />
           {expanded && <span>Products</span>}
+        </div>
+
+        <div
+          className={`menu-item ${
+            isActive("/users") ? "active" : ""
+          }`}
+          onClick={() => navigate("/users")}
+        >
+          <PeopleIcon />
+          {expanded && <span>Customers</span>}
         </div>
 
         <div

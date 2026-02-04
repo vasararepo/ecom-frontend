@@ -1,10 +1,13 @@
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Chip from "@mui/material/Chip";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import type { ReactElement } from "react";
+
+/* ================= TYPES ================= */
 
 type BreadcrumbItem = {
   label: string;
-  icon?: React.ReactNode;
+  icon?: ReactElement;
   onClick?: () => void;
   active?: boolean;
 };
@@ -12,6 +15,8 @@ type BreadcrumbItem = {
 type Props = {
   items: BreadcrumbItem[];
 };
+
+/* ================= COMPONENT ================= */
 
 const AppBreadcrumb = ({ items }: Props) => {
   return (
@@ -23,7 +28,7 @@ const AppBreadcrumb = ({ items }: Props) => {
         <Chip
           key={index}
           label={item.label}
-          icon={item.icon as any}
+          icon={item.icon}
           clickable={!item.active}
           onClick={item.onClick}
           variant="outlined"
